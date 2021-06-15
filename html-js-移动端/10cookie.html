@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+  //  console.log('开始',document.cookie) 
+
+  //  document.cookie='username=ljc'
+  //  document.cookie='password=123'
+  //  console.log('设置') 
+
+  //  console.log('获取',document.cookie)
+
+  //  document.cookie="键=值; expires=过期时间"
+    // cookie 后端会操作 但是 前端也可以操作的
+   document.cookie="username=zs"
+  // 写一次 就多一个cookie
+  document.cookie="age=18"
+
+  //  获取
+   console.log( document.cookie )
+  //  取出来 是一个字符串形式  username=zs; age=18
+  // 就需要split拆分处理字符串 获取 username  或者age 
+
+  // locastorage sessionstorage  cookie
+  // cookie 
+  //   1 存的数据量小 2 默认浏览器关掉就过期了 但是可以自己设置过期时间 3 不太安全(每次请求头会带上)
+  // locastorage 1 存的数据量大 2 不过期 除非你删掉
+
+  // cookie是很久以前的技术 那时候用来存储用户登录 现在 locastorage 存token来操作
+  // 注意：cookie 跨域有问题 现在都是 用 locastorage 存token 统一
+
+
+  </script>
+</body>
+</html>

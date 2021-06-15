@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="./js/jquery.js"></script>
+</head>
+<body>
+   手机号 ：<input id="phone" type="tel"> <button id='btn'>60s倒计时手机验证码</button>
+   <script>
+    //  点击按钮  把手机号  发送ajax  到后台 
+       document.querySelector('#btn').onclick=function(){
+            let phone=$("#phone").val()
+            $.ajax({
+               url:"./php/duanxinyanzhengma.php",
+               type:"get",
+               data:{
+                 phone:phone
+               },
+               success:function(res){
+                    console.log('res',res)
+               }
+            })
+       }
+   </script>
+</body>
+</html>

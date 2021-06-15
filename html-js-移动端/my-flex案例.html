@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    /* 父盒子 开启 flex 子元素默认一行 
+    弹性布局的盒子 如果不够现实 会默认伸缩
+     */
+    .box{
+      display: flex;
+      /* flex-wrap  wrap强制换行  nowrap 不换*/
+      flex-wrap: wrap;
+     
+    }
+
+    .item{
+      width: 33.3333%;
+      height: 125px;
+      display: flex;
+      /* 换成竖排 */
+      flex-direction: column;
+      /* 主轴居中 */
+      justify-content: center; 
+      align-items: center;
+      border-left: 1px solid #eee;
+      border-bottom: 1px solid #eee;
+      box-sizing: border-box;
+    }
+    .item img {
+      width: 35px ;
+    }
+    .item p {
+      padding: 10px 0;
+    }
+    
+  </style>
+</head>
+<body>
+    <div class="box">
+        <!-- 每一个盒子 -->
+       <div class="item">
+          <img src="./images/grid-01.png" alt="">
+          <p>美食</p>
+       </div>
+       <div class="item">
+          <img src="./images/grid-01.png" alt="">
+          <p>美食</p>
+       </div>
+       <div class="item">
+          <img src="./images/grid-01.png" alt="">
+          <p>美食</p>
+       </div>
+       <div class="item">
+          <img src="./images/grid-01.png" alt="">
+          <p>美食</p>
+       </div>
+       <div class="item">
+          <img src="./images/grid-01.png" alt="">
+          <p>美食</p>
+       </div>
+       <div class="item">
+          <img src="./images/grid-01.png" alt="">
+          <p>美食</p>
+       </div>
+ 
+         
+
+    </div>
+</body>
+</html>

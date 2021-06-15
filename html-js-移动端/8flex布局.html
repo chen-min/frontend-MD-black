@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+      /* 父 */
+      .box {
+        width: 600px;
+        height: 600px;
+        border: 2px solid red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+
+      .son{
+        /* 100px 小  flex-grow 会放大占满    250px 超过了  flex-shrink  1 会缩小占满 */
+        width: 100px;
+
+        height: 100px;
+        /* flex-grow: 1; */
+       
+        /*  flex-grow: 1; */
+        /* flex-shrink: 1; */
+        
+      }
+      .son1{
+        background-color: green;
+      }
+      .son2{
+        background-color: blue;
+      }
+      .son3{
+        background-color: pink;
+      }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div class="son son1">
+
+    </div>
+    <div class="son son2">
+
+    </div>
+    <div class="son son3">
+
+    </div>
+  </div>
+</body>
+
+</html>

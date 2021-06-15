@@ -1,0 +1,16 @@
+CACHE MANIFEST
+#v0.11
+
+# CACHE 你要把哪些文件存在浏览器
+CACHE:
+
+ljc.css
+../images/banner-02.png
+
+# NETWORK 你不存哪些
+NETWORK:
+../images/banner-01.png
+
+# FALLBACK 如果访问a.html 没有找到 就跳转到offline.html
+FALLBACK:
+./a.html  ./offline.html

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h1>es6中的class语法</h1>
+  <script>
+
+  // 构造函数
+  // function Person(){
+  //     this.name='建林'
+  //     this.age=18
+  //     this.say=function(){
+  //       console.log('person的say')
+  //     }
+  // }
+  // let p1=new Person()
+  // console.log(p1.name)
+  // p1.say()
+  // class 新es6语法  就是 构造函数的 另一种新写法 语法糖
+  class Person{
+      constructor(){
+         this.name='建林'
+         this.age=18
+      }
+
+      say() {
+        console.log('person的say')
+      }
+  }
+  // let p2=new Person()
+  // console.log(p2.name)
+  // p2.say()
+  // class 子 extends 父 {
+
+  // }
+  class Teacher extends Person{
+    // // 复杂写法 
+    // constructor(){
+    //     //constructor 在this之前 一定要写super()
+    //     super();// 调用 父亲的 constructor
+    //     this.name='思聪'
+    //     this.score=10000
+    // }
+    // 简单写法
+    name='思聪'
+
+    score=10000
+
+    hello(){
+        console.log('hello')
+    }
+    abc(){
+          console.log('abc')
+    }
+
+  }
+  let t1=new Teacher()
+  console.log(t1.name)
+  t1.say()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    // function Person (){
+    //   this.name='建林'
+    //   this.age=18
+    //   this.say=function(){
+    //     console.log('say方法')
+    //   }
+    // }
+
+    // class Person {
+    //     constructor(){
+    //        this.name='建林'
+    //        this.age=18
+    //     }
+
+    //     say() {
+    //       console.log('say方法')
+    //     }
+    // }
+
+    // class Teacher extends Person {
+    //     constructor(){
+    //         super();// 继承必须写super 他就是父类 上面的那个 constructor
+           
+    //         this.name='思聪'
+    //     }
+
+    //     eat(){
+    //       console.log('eat')
+    //     }
+
+    // }
+
+    // let t1=new Teacher()
+    // console.log(t1)
+
+
+  </script>
+</body>
+</html>
